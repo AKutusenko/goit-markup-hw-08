@@ -1,3 +1,52 @@
+.navigation-list {
+  display: none;
+}
+.contacts-list {
+  display: none;
+}
+
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.logo {
+  font-family: var(--text-title);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+  color: var(--logo-first-color);
+
+  display: inline-block;
+  padding: 25px 0;
+  margin-right: 93px;
+}
+
+.logo-second {
+  color: var(--logo-second-color);
+}
+
+.burger-btn {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+.burger-icon {
+  width: 24px;
+  height: 16px;
+}
+
+.mobile-menu {
+  position: absolute;
+  width: 100%;
+  min-width: 480px;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+}
+
 // .header {
 //   border-bottom: 1px solid #ececec;
 // }
