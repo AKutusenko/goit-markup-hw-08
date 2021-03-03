@@ -82,7 +82,6 @@ a {
     width: 768px;
   }
   .header .container {
-    display: flex;
     align-items: center;
   }
 }
