@@ -94,6 +94,7 @@ a {
 
 .social-list {
   display: flex;
+  justify-content: center;
 }
 
 .social-list-item:not(:last-child) {
