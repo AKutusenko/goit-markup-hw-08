@@ -619,13 +619,13 @@ a {
 
 @media screen and (min-width: 1200px) {
   .join {
-    margin-right: 100px;
+    margin-right: 109px;
   }
   .join-title {
     text-align: left;
   }
   .subscribe input {
-    width: 358px;
+    width: 352px;
     height: 50px;
     margin-right: 12px;
   }
