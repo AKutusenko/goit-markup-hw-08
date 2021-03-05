@@ -73,6 +73,8 @@
     &:nth-child(odd) {
       margin-right: 30px;
     }
+
+    flex-basis: calc(100% / 2 - 15px);
   }
 }
 
