@@ -1,7 +1,12 @@
+.projects {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .filter-list {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .filter-list-btn {
@@ -37,86 +42,109 @@
   }
 }
 
-.projects {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.projects-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: -30px;
-  margin-bottom: -30px;
-}
-
-.projects-list-item {
-  outline: 1px solid #eeeeee;
-
-  flex-basis: calc(100% / 3 - 30px);
-  margin-right: 30px;
-  margin-bottom: 30px;
-
-  transition: box-shadow var(--transit-time) cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.projects-list-link {
-  &:hover,
-  &:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-      1px 4px 6px rgba(0, 0, 0, 0.16);
+@media screen and (max-width: 767px) {
+  .filter-list-item {
+    &:nth-child(1) {
+      margin-bottom: 15px;
+    }
   }
 }
 
-.project-photo-wrapper {
-  position: relative;
-  overflow: hidden;
-}
+@media screen and (min-width: 768px) {
+  .filter-list {
+    justify-content: center;
+    flex-wrap: nowrap;
 
-.project-photo-overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  transform: translateY(100%);
-  transition: transform var(--transit-time) cubic-bezier(0.4, 0, 0.2, 1);
-
-  padding: 63px 24px;
-
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.555;
-  letter-spacing: 0.03em;
-  color: var(--mostly-used-color-inverse);
-
-  background-color: rgba(33, 150, 243, 0.9);
-
-  .projects-list-link:hover &,
-  .projects-list-link:focus & {
-    transform: translateY(0);
+    margin-bottom: 30px;
   }
 }
 
-.project-list-item-container {
-  padding-top: 20px;
-  padding-right: 24px;
-  padding-bottom: 20px;
-  padding-left: 24px;
+@media screen and (min-width: 1200px) {
+  .filter-list {
+    margin-bottom: 50px;
+  }
+
+  .projects {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
-.projects-list-item-title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: var(--mostly-used-color);
-  margin-bottom: 4px;
-}
+// .projects-list {
+//   display: flex;
+//   flex-wrap: wrap;
+//   margin-right: -30px;
+//   margin-bottom: -30px;
+// }
 
-.projects-list-item-description {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.875;
-  letter-spacing: 0.03em;
-  color: var(--second-level-color);
-}
+// .projects-list-item {
+//   outline: 1px solid #eeeeee;
+
+//   flex-basis: calc(100% / 3 - 30px);
+//   margin-right: 30px;
+//   margin-bottom: 30px;
+
+//   transition: box-shadow var(--transit-time) cubic-bezier(0.4, 0, 0.2, 1);
+// }
+
+// .projects-list-link {
+//   &:hover,
+//   &:focus {
+//     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+//       1px 4px 6px rgba(0, 0, 0, 0.16);
+//   }
+// }
+
+// .project-photo-wrapper {
+//   position: relative;
+//   overflow: hidden;
+// }
+
+// .project-photo-overlay {
+//   position: absolute;
+//   width: 100%;
+//   height: 100%;
+//   left: 0;
+//   top: 0;
+//   transform: translateY(100%);
+//   transition: transform var(--transit-time) cubic-bezier(0.4, 0, 0.2, 1);
+
+//   padding: 63px 24px;
+
+//   font-weight: 400;
+//   font-size: 18px;
+//   line-height: 1.555;
+//   letter-spacing: 0.03em;
+//   color: var(--mostly-used-color-inverse);
+
+//   background-color: rgba(33, 150, 243, 0.9);
+
+//   .projects-list-link:hover &,
+//   .projects-list-link:focus & {
+//     transform: translateY(0);
+//   }
+// }
+
+// .project-list-item-container {
+//   padding-top: 20px;
+//   padding-right: 24px;
+//   padding-bottom: 20px;
+//   padding-left: 24px;
+// }
+
+// .projects-list-item-title {
+//   font-weight: 700;
+//   font-size: 18px;
+//   line-height: 2;
+//   letter-spacing: 0.06em;
+//   color: var(--mostly-used-color);
+//   margin-bottom: 4px;
+// }
+
+// .projects-list-item-description {
+//   font-weight: 400;
+//   font-size: 16px;
+//   line-height: 1.875;
+//   letter-spacing: 0.03em;
+//   color: var(--second-level-color);
+// }
