@@ -188,11 +188,13 @@ a {
   .mobile-menu.is-open {
     transform: translateX(-50%);
   }
+  .mobile-menu-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
   .mobile-menu-nav-item:not(:last-child) {
     margin-bottom: 30px;
-  }
-  .mobile-menu-nav-item:last-child {
-    margin-bottom: 302px;
   }
   .mobile-menu-nav-link {
     font-weight: 500;
@@ -641,10 +643,7 @@ a {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-container {
     flex-wrap: wrap;
-  }
-  .footer-left-side,
-  .join {
-    flex-grow: 1;
+    justify-content: space-around;
   }
   .footer-left-side {
     margin-bottom: 60px;

@@ -65,15 +65,20 @@
       transform: translateX(-50%);
     }
   }
+  .mobile-menu-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
   .mobile-menu-nav-item {
     &:not(:last-child) {
       margin-bottom: 30px;
     }
 
-    &:last-child {
-      margin-bottom: 302px;
-    }
+    // &:last-child {
+    //   margin-bottom: 302px;
+    // }
   }
 
   .mobile-menu-nav-link {
