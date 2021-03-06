@@ -198,8 +198,7 @@ a {
   .mobile-menu {
     position: absolute;
     z-index: 100;
-    width: 100%;
-    max-width: 480px;
+    width: 100vw;
     height: 100vh;
     top: 0;
     left: 50%;
@@ -385,10 +384,11 @@ a {
   text-align: center;
   margin: 0 auto;
   padding-top: 118px;
-  width: 480px;
+  max-width: 480px;
   height: 400px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile/studio/hero/hero.jpg");
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
 }
 
 @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
@@ -419,10 +419,9 @@ a {
 
 @media screen and (min-width: 768px) {
   .hero {
-    width: 768px;
+    max-width: 768px;
     height: 400px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/tablet/studio/hero/hero.jpg");
-    background-size: contain;
   }
 }
 
@@ -435,7 +434,7 @@ a {
 @media screen and (max-width: 1199px) {
   .hero-title-container {
     margin: 0 auto;
-    width: 360px;
+    max-width: 360px;
     height: 84px;
   }
   .hero-title {
@@ -452,27 +451,26 @@ a {
 
 @media screen and (min-width: 1200px) {
   .hero {
-    width: 1600px;
+    max-width: 1600px;
     height: 600px;
     padding-top: 200px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/pc/studio/hero/hero.jpg");
-    background-size: contain;
   }
 }
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-  .hero {
+  .hero .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/pc/studio/hero/hero@2x.jpg");
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .hero-title-container {
+  .hero .hero-title-container {
     margin: 0 auto;
-    width: 696px;
+    max-width: 696px;
     height: 120px;
   }
-  .hero-title {
+  .hero .hero-title {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.364;
@@ -489,7 +487,7 @@ a {
 }
 
 .advantages-icon-thumb {
-  width: 450px;
+  max-width: 450px;
   height: 120px;
   background-color: #f5f4fa;
   display: flex;
@@ -701,18 +699,17 @@ a {
 
 .clients {
   padding-top: 60px;
-  padding-bottom: 30px;
+  padding-bottom: 60px;
 }
 
 .clients-list {
+  justify-content: center;
   display: flex;
   flex-wrap: wrap;
-  margin-right: -30px;
   margin-bottom: -30px;
 }
 
 .clients-list-item {
-  margin-right: 30px;
   margin-bottom: 30px;
 }
 
@@ -769,6 +766,18 @@ a {
 .clients-icon-6 {
   width: 89px;
   height: 46px;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .clients-list-item:nth-child(odd) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .clients-list-item:nth-child(1), .clients-list-item:nth-child(2), .clients-list-item:nth-child(4), .clients-list-item:nth-child(5) {
+    margin-right: 30px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1009,7 +1018,7 @@ a {
 }
 
 .subscribe input {
-  width: 450px;
+  width: 100%;
   height: 50px;
   margin-bottom: 20px;
   padding: 15px;
@@ -1057,6 +1066,12 @@ a {
   }
   .footer-left-side {
     margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .subscribe input {
+    width: 450px;
   }
 }
 

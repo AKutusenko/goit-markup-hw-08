@@ -1,18 +1,17 @@
 .clients {
   padding-top: 60px;
-  padding-bottom: 30px;
+  padding-bottom: 60px;
 }
 
 .clients-list {
+  justify-content: center;
   display: flex;
   flex-wrap: wrap;
 
-  margin-right: -30px;
   margin-bottom: -30px;
 }
 
 .clients-list-item {
-  margin-right: 30px;
   margin-bottom: 30px;
 }
 
@@ -73,6 +72,24 @@
 .clients-icon-6 {
   width: 89px;
   height: 46px;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .clients-list-item {
+    &:nth-child(odd) {
+      margin-right: 30px;
+    }
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .clients-list-item {
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(4),
+    &:nth-child(5) {
+      margin-right: 30px;
+    }
+  }
 }
 
 @media screen and (min-width: 768px) {
