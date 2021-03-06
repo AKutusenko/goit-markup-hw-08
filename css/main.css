@@ -384,6 +384,7 @@ a {
   text-align: center;
   margin: 0 auto;
   padding-top: 118px;
+  padding-bottom: 118px;
   max-width: 480px;
   height: 400px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile/studio/hero/hero.jpg");
@@ -454,6 +455,7 @@ a {
     max-width: 1600px;
     height: 600px;
     padding-top: 200px;
+    padding-bottom: 200px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/pc/studio/hero/hero.jpg");
   }
 }
@@ -836,7 +838,7 @@ a {
 }
 
 @media screen and (max-width: 767px) {
-  .filter-list-item:nth-child(1) {
+  .filter-list-item:nth-child(1), .filter-list-item:nth-child(3) {
     margin-bottom: 15px;
   }
 }
